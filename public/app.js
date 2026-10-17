@@ -20,8 +20,6 @@ function login() {
   const c = document.getElementById("clave").value.trim();
   const msg = document.getElementById("login-msg");
 
-  localStorage.setItem("sesion", "activa") //===========
-
   if (u === "admin" && c === "1234") {
     localStorage.setItem("sesion", "activa") // solo si la clave es correcta
     document.getElementById("login").classList.add("oculto");
